@@ -1,0 +1,44 @@
+{
+  "name": "dung/laravel-base",
+  "description": "Laravel YaangVu Base",
+  "keywords": [
+    "laravel",
+    "lumen",
+    "base",
+    "yaangvu",
+    "api"
+  ],
+  "license": "MIT",
+  "require": {
+    "php": "^8.0|^8.1",
+    "illuminate/database": "^7|^8|^9",
+    "illuminate/pagination": "^7|^8|^9",
+    "illuminate/http": "^7|^8|^9",
+    "illuminate/console": "^7|^8|^9",
+    "yaangvu/laravel-exception": "^1",
+    "fakerphp/faker": "*"
+  },
+  "authors": [
+    {
+      "name": "Yaang Vu",
+      "email": "yaangvu@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "autoload": {
+    "psr-4": {
+      "YaangVu\\LaravelBase\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Dungdv\\LaravelBase\\Providers\\BaseServiceProvider"
+      ],
+      "aliases": {
+        "BaseService": "Dungdv\\LaravelBase\\Services\\BaseService",
+        "Query": "Dungdv\\LaravelBase\\Facades\\Query"
+      }
+    }
+  }
+}
